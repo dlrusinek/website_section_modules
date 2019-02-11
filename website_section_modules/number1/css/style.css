@@ -1,0 +1,49 @@
+#first-container{
+  background: #eeeeff;
+  width: 100%;
+  height: 600px;
+}
+
+#second-container{
+  background: #aaaaff;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sliding-bar{
+  display: inline-block;
+  background: pink;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  animation: myframes 2s ease-in-out 0s infinite;
+}
+
+@keyframes myframes{
+  0%{
+    height: 200px;
+  }
+  30%, 100%{
+    width: 400px;
+  }
+  100%{
+    width: 600px;
+    background: orange;
+  }
+}
+
+
+.loading-bar{
+  width: 400px;
+  height: 70px;
+  background: #ffffff;
+}
+
+.loading-bar .black-box {
+  width: 20px;
+  height: 70px;
+  background: #000000;
+}
